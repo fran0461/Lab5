@@ -1,0 +1,23 @@
+﻿@using Lab5.Models
+@model AnswerImages
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Lab5</h1>
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Answer Images", "Index", "AnswerImages")
+    </header>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>
+
